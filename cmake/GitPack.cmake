@@ -15,6 +15,9 @@
 # NOTE: If this file is used from sources already packed, the ignores will have
 #       no effect and it will behave just like the regular `CPack` file.
 
+# Set the minimum required CMake version.
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
 # Ignore some basic files, like the build and install directories and the git
 # directory (only neccessary, if packing from inside a git repositoy).
 #
@@ -39,7 +42,7 @@ SET(CPACK_SOURCE_IGNORE_FILES
 FILE(GLOB_RECURSE ATTRIBUTE_FILES ".gitattributes")
 IF (ATTRIBUTE_FILES)
     FOREACH (ATTRIBUTE_FILE ${ATTRIBUTE_FILES})
-        GET_FILENAME_COMPONENT(GIT_ROOT "${ATTRIBUTE_FILE}" DIRECTORY)
+        GET_FILENAME_COMPONENT(GIT_ROOT "${ATTRIBUTE_FILE}" PATH)
 
         # Read the '.gitattributes' file and convert its contents into a CMake
         # list (where each element in the list is one line of the file).

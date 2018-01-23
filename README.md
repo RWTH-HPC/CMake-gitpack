@@ -2,6 +2,7 @@
 
 [![](https://img.shields.io/github/issues-raw/RWTH-HPC/CMake-gitpack.svg?style=flat-square)](https://github.com/RWTH-HPC/CMake-gitpack/issues)
 [![](https://img.shields.io/badge/license-BSD--3--clause-blue.svg?style=flat-square)](LICENSE)
+![CMake 2.6 required](http://img.shields.io/badge/CMake_required-2.6-lightgrey.svg?style=flat-square)
 
 CMake module to enhance CPack with ignore patterns from `.gitattributes`.
 

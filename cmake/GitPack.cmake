@@ -16,7 +16,7 @@
 #       no effect and it will behave just like the regular `CPack` file.
 
 # Set the minimum required CMake version.
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8.12)
 
 # Ignore some basic files, like the build and install directories and the git
 # directory (only neccessary, if packing from inside a git repositoy).
